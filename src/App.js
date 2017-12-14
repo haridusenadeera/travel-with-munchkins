@@ -1,31 +1,28 @@
 import React, { Component } from 'react';
-import WorldMap from './WorldMap.js';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import Home from './routes/Home';
+import Trips from './routes/Trips';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {activeContinent: ''};
-    this.continentClicked = this.continentClicked.bind(this)
-  }
-
-  continentClicked(continent) {
-    this.setState({
-      activeContinent: continent
-    });
-  }
-
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <WorldMap parentCallback={this.continentClicked} />
-        <h1>{this.state.activeContinent}</h1>
-      </div>
+      <Router>
+        <div>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/trips">Trips</Link></li>
+          </ul>
+
+          <hr/>
+
+          <Route exact path="/" component={Home}/>
+          <Route path="/trips" component={Trips}/>
+        </div>
+      </Router>
     );
   }
 }
