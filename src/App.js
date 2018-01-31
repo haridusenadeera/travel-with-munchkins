@@ -12,6 +12,10 @@ import {
   Nav,
   NavItem,
   NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import Home from './routes/Home';
 import Trips from './routes/Trips';
@@ -36,16 +40,27 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar color="faded" light expand="md">
+          <Navbar dark expand="md" style={{backgroundColor: '#1289A7'}}>
             <NavbarBrand tag={Link} to="/">Travel With Munchkins</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <NavLink tag={Link} to="/trips">
-                    Trips
-                  </NavLink>
-                </NavItem>
+              <UncontrolledDropdown nav>
+                <DropdownToggle nav caret>
+                  Trips
+                </DropdownToggle>
+                <DropdownMenu >
+                  <DropdownItem tag={Link} to="/europe">
+                    Europe
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/north-america">
+                    North America
+                  </DropdownItem>
+                  <DropdownItem tag={Link} to="/asia">
+                    Asia
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
                 <NavItem>
                   <NavLink tag={Link} to="/tips">
                     Tips
@@ -62,7 +77,16 @@ class App extends Component {
 
 
           <Route exact path="/" component={Home}/>
-          <Route path="/trips" component={Trips}/>
+          <Route path="/europe" component={Trips} />
+          <Route path="/north-america" component={Trips} />
+          <Route path="/south-america" component={Trips} />
+          <Route path="/australia" component={Trips} />
+          <Route path="/asia" component={Trips} />
+          <footer className="footer">
+            <div className="container">
+              <div className="text-muted">© 2018. All rights reserved.</div>
+            </div>
+          </footer>
         </div>
       </Router>
     );
