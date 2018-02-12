@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import WorldMap from './WorldMap.js';
 import trips from '../../country-list';
 import './styles.css';
@@ -43,13 +44,15 @@ class Home extends Component {
     const { activeContinent } = this.state;
     const continentName = activeContinent.replace("_", " "); // remove underscore from id name
     const countryList = trips[activeContinent].map((name) => {
-      return <li key={name}>{name}</li>;
+      const page = name.replace(" ", "-").toLowerCase();
+      const url = activeContinent.replace("_", "-").toLowerCase();
+      return <li key={name}><Link to={`${url}/${page}`}>{name}</Link></li>;
     });
     return (
       <Popover placement="bottom" isOpen={this.state.popoverOpen} target={activeContinent}>
         <PopoverHeader>{continentName}</PopoverHeader>
         <PopoverBody>
-          <ul>{countryList}</ul>
+          <ul className="country-list">{countryList}</ul>
         </PopoverBody>
       </Popover>
     );

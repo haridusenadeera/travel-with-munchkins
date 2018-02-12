@@ -19,6 +19,7 @@ import {
 } from 'reactstrap';
 import Home from './routes/Home';
 import Trips from './routes/Trips';
+import Tips from './routes/Tips';
 
 class App extends Component {
   constructor(props) {
@@ -77,6 +78,7 @@ class App extends Component {
 
 
           <Route exact path="/" component={Home}/>
+          <Route path="/tips" component={Tips} />
           <Route path="/europe" component={Trips} />
           <Route path="/north-america" component={Trips} />
           <Route path="/south-america" component={Trips} />

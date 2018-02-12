@@ -1,3 +1,8 @@
 .home {
   text-align: center;
 }
+
+.country-list {
+  list-style-type: none;
+  padding-left:0;
+}

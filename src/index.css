@@ -5,7 +5,8 @@ body {
 }
 
 .map-selected {
-  fill: #E3DA37;
+  /*fill: #E3DA37;*/
+  fill: #ED4C67;
 }
 
 .map-unselected {

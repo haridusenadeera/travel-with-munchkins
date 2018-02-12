@@ -5,7 +5,8 @@ class Trips extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Under Construction...</h1>
+        <h1>TIPS</h1>
+        <h2>Under construction...</h2>
       </div>
     );
   }
