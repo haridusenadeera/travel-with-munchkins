@@ -2,7 +2,7 @@
   "name": "travelwithmunchkins",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://haridusenadeera.github.io/travel-with-munchkins",
+  "homepage": "http://haridusenadeera.github.io/travel-with-munchkins/",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
     "react": "^16.2.0",
