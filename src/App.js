@@ -21,6 +21,8 @@ import Home from './routes/Home';
 import Trips from './routes/Trips';
 import Tips from './routes/Tips';
 
+import Europe from './routes/Trips/Europe';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -79,11 +81,14 @@ class App extends Component {
 
           <Route exact path="/" component={Home}/>
           <Route path="/tips" component={Tips} />
-          <Route path="/europe" component={Trips} />
+          <Route path="/europe" component={Europe} />
           <Route path="/north-america" component={Trips} />
           <Route path="/south-america" component={Trips} />
           <Route path="/australia" component={Trips} />
           <Route path="/asia" component={Trips} />
+
+          <Route path="/germany" component={Tips} />
+
           <footer className="footer">
             <div className="container">
               <div className="text-muted">© 2018. All rights reserved.</div>
