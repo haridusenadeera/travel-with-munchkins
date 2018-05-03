@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, ListGroup, ListGroupItem, Collapse } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem, Collapse, Alert } from 'reactstrap';
 import data from './data';
 // import './styles.css';
 
@@ -43,14 +43,14 @@ class Trips extends Component {
         </Row>
         <Row>
           <Col>
-            <div className="jumbotron">
+            <Alert color="info">
             <ul>
               <li>Europe, especially Germany has a generous vacation policy! Thirty (30) vacation days is something we rarely hear in the USA. We make the full use of the vacation days by planning trips around weekends and public holidays,</li>
               <li>Budget travel is possible in Europe. We usually travel on a budget, but our travels are very comfortable.</li>
               <li>Europeans travel so much. There are so many budget airlines which offer tickets at a very low price to many European destinations. For example, we flew to Rome from Berlin and back for 60 Euros! </li>
               <li>Europe has a well connected excellent train network. We use trains whenever it's convenient. Kids under 6 years usually travel free of charge. There are kids' compartments in some fast trains and regional trains.</li>
             </ul>
-            </div>
+            </Alert>
           </Col>
         </Row>
         <Row>
