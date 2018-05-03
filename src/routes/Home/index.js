@@ -48,10 +48,11 @@ class Home extends Component {
       const url = activeContinent.replace("_", "-").toLowerCase();
       return <li key={name}><Link to={`${url}/${page}`}>{name}</Link></li>;
     });
+    const bodyStyle = {overflow: 'hidden', overflowY: 'scroll', maxHeight: '20rem'}
     return (
       <Popover placement="bottom" isOpen={this.state.popoverOpen} target={activeContinent}>
         <PopoverHeader>{continentName}</PopoverHeader>
-        <PopoverBody>
+        <PopoverBody style={bodyStyle}>
           <ul className="country-list">{countryList}</ul>
         </PopoverBody>
       </Popover>
