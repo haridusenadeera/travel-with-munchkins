@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Container, Row, Col, Card, CardImg,
-  CardBody, CardTitle, Button
+  CardBody, CardTitle, Button, Breadcrumb, BreadcrumbItem
 } from 'reactstrap';
 import trips from '../../country-list';
 
@@ -22,7 +22,7 @@ class Trips extends Component {
             />
             <CardBody>
               <CardTitle>{name}</CardTitle>
-                <Link to={`/${country}`}>
+                <Link to={`/${country}`} style={{textDecoration: 'none'}}>
                   <Button outline color="info" block>Explore</Button>
                 </Link>
             </CardBody>
@@ -34,7 +34,16 @@ class Trips extends Component {
       <Container>
         <Row>
           <Col>
-            <h1 className="display-2">Europe</h1>
+            <Breadcrumb>
+              <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
+              <BreadcrumbItem active>Europe</BreadcrumbItem>
+            </Breadcrumb>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h1 className="display-3">Europe</h1>
+            <p className="lead">Explore our travels in Europe.</p>
           </Col>
         </Row>
         <Row>

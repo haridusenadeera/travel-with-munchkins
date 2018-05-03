@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, ListGroup, ListGroupItem, Collapse, Alert } from 'reactstrap';
+import {
+  Container, Row, Col, ListGroup, ListGroupItem,
+  Collapse, Alert, Breadcrumb, BreadcrumbItem
+} from 'reactstrap';
+import { Link } from 'react-router-dom';
 import data from './data';
 // import './styles.css';
 
@@ -31,7 +35,15 @@ class Trips extends Component {
       <Container>
         <Row>
           <Col>
-            <h1 className="display-4">Travel Tips</h1>
+            <Breadcrumb>
+              <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
+              <BreadcrumbItem active>Tips</BreadcrumbItem>
+            </Breadcrumb>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h1 className="display-3">Travel Tips</h1>
           </Col>
         </Row>
         <Row>
