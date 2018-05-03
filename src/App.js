@@ -43,7 +43,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <Navbar dark expand="md" style={{backgroundColor: '#1289A7'}}>
+          <Navbar dark expand="md" style={{backgroundColor: '#1289A7', marginBottom: '1rem'}}>
             <NavbarBrand tag={Link} to="/">Travel With Munchkins</NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
