@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.e63bb9d9.css",
   "main.css.map": "static/css/main.e63bb9d9.css.map",
-  "main.js": "static/js/main.77f75c3b.js",
-  "main.js.map": "static/js/main.77f75c3b.js.map",
+  "main.js": "static/js/main.e75c360f.js",
+  "main.js.map": "static/js/main.e75c360f.js.map",
   "static/media/andorra.jpg": "static/media/andorra.fd87e01d.jpg",
   "static/media/bosnia.jpg": "static/media/bosnia.1f296fbe.jpg",
   "static/media/croatia.jpg": "static/media/croatia.044701dc.jpg",
@@ -23,7 +23,9 @@
   "static/media/slovakia.jpg": "static/media/slovakia.7e1891dd.jpg",
   "static/media/slovenia.jpg": "static/media/slovenia.18cf4782.jpg",
   "static/media/spain.jpg": "static/media/spain.5389bd9b.jpg",
+  "static/media/sri-lanka.jpg": "static/media/sri-lanka.b47d171d.jpg",
   "static/media/switzerland.jpg": "static/media/switzerland.e79e39b3.jpg",
   "static/media/turkey.jpg": "static/media/turkey.d50a2229.jpg",
-  "static/media/uk.jpg": "static/media/uk.085c4ac9.jpg"
+  "static/media/uk.jpg": "static/media/uk.085c4ac9.jpg",
+  "static/media/usa.jpg": "static/media/usa.04632f54.jpg"
 }
