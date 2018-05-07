@@ -21,7 +21,8 @@ import Home from './routes/Home';
 import Trips from './routes/Trips';
 import Tips from './routes/Tips';
 
-import Europe from './routes/Trips/Europe';
+import Continent from './routes/Trips/Continent';
+// import Asia from './routes/Trips/Asia';
 
 class App extends Component {
   constructor(props) {
@@ -81,11 +82,11 @@ class App extends Component {
 
           <Route exact path="/" component={Home}/>
           <Route path="/tips" component={Tips} />
-          <Route path="/europe" component={Europe} />
-          <Route path="/north-america" component={Trips} />
+          <Route path="/europe" render={()=><Continent continent="Europe" />} />
+          <Route path="/north-america" render={()=><Continent continent="North America" />} />
           <Route path="/south-america" component={Trips} />
           <Route path="/australia" component={Trips} />
-          <Route path="/asia" component={Trips} />
+          <Route path="/asia" render={()=><Continent continent="Asia" />} />
 
           <Route path="/germany" component={Tips} />
 
