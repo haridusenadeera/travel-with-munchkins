@@ -6,9 +6,10 @@ import {
 } from 'reactstrap';
 import trips from '../../country-list';
 
-class Trips extends Component {
+class Continent extends Component {
   render() {
-    const countryCards = trips.Europe.map((name) => {
+    const { continent } = this.props;
+    const countryCards = trips[continent.replace(" ", "_")].map((name) => {
       const country = name.replace(" ", "-").toLowerCase();
       return (
         <Col xs="12" sm="4" lg="3" key={country}>
@@ -36,14 +37,14 @@ class Trips extends Component {
           <Col>
             <Breadcrumb>
               <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
-              <BreadcrumbItem active>Europe</BreadcrumbItem>
+              <BreadcrumbItem active>{continent}</BreadcrumbItem>
             </Breadcrumb>
           </Col>
         </Row>
         <Row>
           <Col>
-            <h1 className="display-3">Europe</h1>
-            <p className="lead">Explore our travels in Europe.</p>
+            <h1 className="display-3">{continent}</h1>
+            <p className="lead">Explore our travels in {continent}.</p>
           </Col>
         </Row>
         <Row>
@@ -54,4 +55,4 @@ class Trips extends Component {
   }
 }
 
-export default Trips;
+export default Continent;
