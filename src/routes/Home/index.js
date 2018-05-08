@@ -45,8 +45,7 @@ class Home extends Component {
     const continentName = activeContinent.replace("_", " "); // remove underscore from id name
     const countryList = trips[activeContinent].map((name) => {
       const page = name.replace(" ", "-").toLowerCase();
-      const url = activeContinent.replace("_", "-").toLowerCase();
-      return <li key={name}><Link to={`${url}/${page}`}>{name}</Link></li>;
+      return <li key={name}><Link to={`/${page}`}>{name}</Link></li>;
     });
     const bodyStyle = {overflow: 'hidden', overflowY: 'scroll', maxHeight: '20rem'}
     return (

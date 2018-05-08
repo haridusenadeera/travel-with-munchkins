@@ -18,11 +18,14 @@ import {
   DropdownItem,
 } from 'reactstrap';
 import Home from './routes/Home';
-import Trips from './routes/Trips';
 import Tips from './routes/Tips';
 
 import Continent from './routes/Trips/Continent';
 // import Asia from './routes/Trips/Asia';
+
+import Trips from './routes/Trips';
+
+import Andorra from './routes/Trips/Europe/Andorra';
 
 class App extends Component {
   constructor(props) {
@@ -89,6 +92,8 @@ class App extends Component {
           <Route path="/asia" render={()=><Continent continent="Asia" />} />
 
           <Route path="/germany" component={Tips} />
+
+          <Route path="/andorra" component={Andorra} />
 
           <footer className="footer">
             <div className="container">
