@@ -45,7 +45,7 @@ const items = [
 class Andorra extends Component {
   render() {
     return (
-      <div className="container">
+      <Container>
         <Row>
           <Col>
             <h1 className="display-3">Andorra</h1>
@@ -66,7 +66,7 @@ class Andorra extends Component {
             </p>
           </Col>
         </Row>
-      </div>
+      </Container>
     );
   }
 }
