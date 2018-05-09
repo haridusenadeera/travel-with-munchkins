@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import Carousel from '../../../../components/Carousel';
 // import './styles.css';
 
@@ -8,37 +9,44 @@ const items = [
   {
     src: require('./img/img-1.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
   {
     src: require('./img/img-2.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
   {
     src: require('./img/img-3.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
     {
     src: require('./img/img-4.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
     {
     src: require('./img/img-5.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
     {
     src: require('./img/img-6.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   },
       {
     src: require('./img/img-7.jpeg'),
     altText: '',
-    caption: ''
+    captionText: '',
+    captionHeader: ''
   }
 ];
 
@@ -46,6 +54,15 @@ class Andorra extends Component {
   render() {
     return (
       <Container>
+        <Row>
+          <Col>
+            <Breadcrumb>
+              <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
+              <BreadcrumbItem><Link to="/europe">Europe</Link></BreadcrumbItem>
+              <BreadcrumbItem active>Andorra</BreadcrumbItem>
+            </Breadcrumb>
+          </Col>
+        </Row>
         <Row>
           <Col>
             <h1 className="display-3">Andorra</h1>
