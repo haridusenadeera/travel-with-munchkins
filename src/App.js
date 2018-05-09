@@ -25,6 +25,8 @@ import Continent from './routes/Trips/Continent';
 
 import Trips from './routes/Trips';
 
+import USA from './routes/Trips/North-America/USA';
+
 import Andorra from './routes/Trips/Europe/Andorra';
 import Austria from './routes/Trips/Europe/Austria';
 import Belgium from './routes/Trips/Europe/Belgium';
@@ -102,6 +104,8 @@ class App extends Component {
           <Route path="/belgium" component={Belgium} />
           <Route path="/bosnia" component={Bosnia} />
           <Route path="/croatia" component={Croatia} />
+
+          <Route path="/usa" component={USA} />
 
           <footer className="footer">
             <div className="container">
