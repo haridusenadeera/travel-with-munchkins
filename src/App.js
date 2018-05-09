@@ -26,6 +26,7 @@ import Continent from './routes/Trips/Continent';
 import Trips from './routes/Trips';
 
 import Andorra from './routes/Trips/Europe/Andorra';
+import Austria from './routes/Trips/Europe/Austria';
 
 class App extends Component {
   constructor(props) {
@@ -94,6 +95,7 @@ class App extends Component {
           <Route path="/germany" component={Tips} />
 
           <Route path="/andorra" component={Andorra} />
+          <Route path="/austria" component={Austria} />
 
           <footer className="footer">
             <div className="container">
