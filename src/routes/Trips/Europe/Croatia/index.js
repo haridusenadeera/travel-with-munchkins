@@ -143,6 +143,7 @@ class Croatia extends Component {
         </Row>
         <Row>
           <Col xs="12">
+            <br />
             <p className="lead">
             <strong>Historical City Wall:</strong> We started in mid morning and saw the beautiful views of Adriatic sea and the old town! Nikini was determined to go to the highest point. 
             </p>

@@ -27,6 +27,8 @@ import Trips from './routes/Trips';
 
 import USA from './routes/Trips/North-America/USA';
 
+import Russia from './routes/Trips/Asia/Russia';
+
 import Andorra from './routes/Trips/Europe/Andorra';
 import Austria from './routes/Trips/Europe/Austria';
 import Belgium from './routes/Trips/Europe/Belgium';
@@ -98,6 +100,8 @@ class App extends Component {
           <Route path="/asia" render={()=><Continent continent="Asia" />} />
 
           <Route path="/germany" component={Tips} />
+
+          <Route path="/russia" component={Russia} />
 
           <Route path="/andorra" component={Andorra} />
           <Route path="/austria" component={Austria} />
