@@ -114,6 +114,7 @@ class Belgium extends Component {
             </p>
           </Col>
         </Row>
+        <br />
         <Row>
           <Col xs="12">
             <p className="lead">
