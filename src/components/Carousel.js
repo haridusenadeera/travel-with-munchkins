@@ -54,7 +54,7 @@ class Example extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <div style={{backgroundColor: '#57606f'}}>
+          <div style={{backgroundColor: '#57606f', margin: '10px 0'}}>
             <img src={item.src} alt={item.altText} className="mx-auto d-block img-fluid" />
           </div>
           <CarouselCaption captionText={item.captionText} captionHeader={item.captionHeader} />
