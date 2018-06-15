@@ -46,6 +46,7 @@ import Hungary from './routes/Trips/Europe/Hungary';
 import Ireland from './routes/Trips/Europe/Ireland';
 import Italy from './routes/Trips/Europe/Italy';
 import Latvia from './routes/Trips/Europe/Latvia';
+import Liechtenstein from './routes/Trips/Europe/Liechtenstein';
 
 class App extends Component {
   constructor(props) {
@@ -130,6 +131,7 @@ class App extends Component {
           <Route path="/ireland" component={Ireland} />
           <Route path="/italy" component={Italy} />
           <Route path="/latvia" component={Latvia} />
+          <Route path="/liechtenstein" component={Liechtenstein} />
 
           <Route path="/usa" component={USA} />
 
