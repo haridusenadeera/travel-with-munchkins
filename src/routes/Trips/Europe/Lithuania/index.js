@@ -110,10 +110,10 @@ class Lithuania extends Component {
         <br />
         <Row>
           <Col xs="12" md="4" lg="4">
-            <img src={gediminas2} className="img-fluid" alr="Gediminas Tower" />
+            <img src={gediminas2} className="img-fluid" alt="Gediminas Tower" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={gediminas1} className="img-fluid" alr="Gediminas Tower" />
+            <img src={gediminas1} className="img-fluid" alt="Gediminas Tower" />
           </Col>
           <Col xs="12" md="4" lg="4">
             <p className="lead">
@@ -129,19 +129,19 @@ class Lithuania extends Component {
             </p>
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={vilnius1} className="img-fluid" alr="Vilnius cathedral" />
+            <img src={vilnius1} className="img-fluid" alt="Vilnius cathedral" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={vilnius2} className="img-fluid" alr="Vilnius cathedral" />
+            <img src={vilnius2} className="img-fluid" alt="Vilnius cathedral" />
           </Col>
         </Row>
         <br />
         <Row>
           <Col xs="12" md="4" lg="4">
-            <img src={bernardine1} className="img-fluid" alr="Bernardine Garden " />
+            <img src={bernardine1} className="img-fluid" alt="Bernardine Garden " />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={bernardine2} className="img-fluid" alr="Bernardine Garden " />
+            <img src={bernardine2} className="img-fluid" alt="Bernardine Garden " />
           </Col>
           <Col xs="12" md="4" lg="4">
             <p className="lead">
@@ -159,13 +159,13 @@ class Lithuania extends Component {
         </Row>
         <Row>
           <Col xs="12" md="4" lg="4">
-            <img src={church1} className="img-fluid" alr="Church" />
+            <img src={church1} className="img-fluid" alt="Church" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={church2} className="img-fluid" alr="Church" />
+            <img src={church2} className="img-fluid" alt="Church" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={church3} className="img-fluid" alr="Church" />
+            <img src={church3} className="img-fluid" alt="Church" />
           </Col>
         </Row>
         <br />
@@ -178,13 +178,13 @@ class Lithuania extends Component {
         </Row>
         <Row>
           <Col xs="12" md="4" lg="4">
-            <img src={uzupis1} className="img-fluid" alr="Uzupis" />
+            <img src={uzupis1} className="img-fluid" alt="Uzupis" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={uzupis2} className="img-fluid" alr="Uzupis" />
+            <img src={uzupis2} className="img-fluid" alt="Uzupis" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={uzupis3} className="img-fluid" alr="Uzupis" />
+            <img src={uzupis3} className="img-fluid" alt="Uzupis" />
           </Col>
         </Row>
         <br />
@@ -195,7 +195,7 @@ class Lithuania extends Component {
             </p>
           </Col>
           <Col xs="12" md="6" lg="3">
-            <img src={sayuri1} className="img-fluid" alr="Sayuri" />
+            <img src={sayuri1} className="img-fluid" alt="Sayuri" />
           </Col>
           <Col xs="12" md="6" lg="3">
             <p className="lead">
@@ -203,7 +203,7 @@ class Lithuania extends Component {
             </p>
           </Col>
           <Col xs="12" md="6" lg="3">
-            <img src={girls1} className="img-fluid" alr="Girls" />
+            <img src={girls1} className="img-fluid" alt="Girls" />
           </Col>
         </Row>
         <br />
@@ -214,10 +214,10 @@ class Lithuania extends Component {
             </p>
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={food1} className="img-fluid" alr="Food" />
+            <img src={food1} className="img-fluid" alt="Food" />
           </Col>
           <Col xs="12" md="4" lg="4">
-            <img src={food2} className="img-fluid" alr="Food" />
+            <img src={food2} className="img-fluid" alt="Food" />
           </Col>
         </Row>
       </Container>
