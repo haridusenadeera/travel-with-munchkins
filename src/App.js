@@ -58,6 +58,7 @@ import Portugal from './routes/Trips/Europe/Portugal';
 import Romania from './routes/Trips/Europe/Romania';
 import Slovakia from './routes/Trips/Europe/Slovakia';
 import Slovenia from './routes/Trips/Europe/Slovenia';
+import Spain from './routes/Trips/Europe/Spain';
 import Sweden from './routes/Trips/Europe/Sweden';
 
 class App extends Component {
@@ -155,6 +156,7 @@ class App extends Component {
           <Route path="/romania" component={Romania} />
           <Route path="/slovakia" component={Slovakia} />
           <Route path="/slovenia" component={Slovenia} />
+          <Route path="/spain" component={Spain} />
           <Route path="/sweden" component={Sweden} />
 
           <Route path="/usa" component={USA} />
