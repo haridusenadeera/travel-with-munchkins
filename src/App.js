@@ -29,6 +29,7 @@ import USA from './routes/Trips/North-America/USA';
 
 import Russia from './routes/Trips/Asia/Russia';
 import SriLanka from './routes/Trips/Asia/Sri-Lanka';
+import Turkey from './routes/Trips/Asia/Turkey';
 
 import Andorra from './routes/Trips/Europe/Andorra';
 import Austria from './routes/Trips/Europe/Austria';
@@ -128,6 +129,7 @@ class App extends Component {
 
           <Route path="/russia" component={Russia} />
           <Route path="/sri-lanka" component={SriLanka} />
+          <Route path="/turkey" component={Turkey} />
 
           <Route path="/andorra" component={Andorra} />
           <Route path="/austria" component={Austria} />
