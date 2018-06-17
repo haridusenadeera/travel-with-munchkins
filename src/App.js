@@ -62,6 +62,7 @@ import Slovenia from './routes/Trips/Europe/Slovenia';
 import Spain from './routes/Trips/Europe/Spain';
 import Sweden from './routes/Trips/Europe/Sweden';
 import Switzerland from './routes/Trips/Europe/Switzerland';
+import UK from './routes/Trips/Europe/UK';
 
 class App extends Component {
   constructor(props) {
@@ -162,6 +163,7 @@ class App extends Component {
           <Route path="/spain" component={Spain} />
           <Route path="/sweden" component={Sweden} />
           <Route path="/switzerland" component={Switzerland} />
+          <Route path="/uk" component={UK} />
 
           <Route path="/usa" component={USA} />
 
