@@ -19,6 +19,7 @@ import {
 } from 'reactstrap';
 import Home from './routes/Home';
 import Tips from './routes/Tips';
+import Contact from './routes/Contact';
 
 import Continent from './routes/Trips/Continent';
 // import Asia from './routes/Trips/Asia';
@@ -122,6 +123,7 @@ class App extends Component {
 
           <Route exact path="/" component={Home}/>
           <Route path="/tips" component={Tips} />
+          <Route path="/contact" component={Contact} />
           <Route path="/europe" render={()=><Continent continent="Europe" />} />
           <Route path="/north-america" render={()=><Continent continent="North America" />} />
           <Route path="/south-america" component={Trips} />
